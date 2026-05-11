@@ -154,15 +154,13 @@ Polarity note:
 ---
 
 ## 8) Loading the program
+- The replica has a small opening in the back. Use that to connect the Pico W to a computer.
+- Install MicroPython firmware on the Pico W
+  - Download the **Pico W** `.uf2` from
+     <https://micropython.org/download/rp2-pico-w/>
+  - Hold BOOTSEL, connect USB, drag the `.uf2` onto the `RPI-RP2` drive.
+- Copy all eight source files from `micropython/` to the **root** of the Pico W filesystem.
+  - Edit the 'wifi_config.py' file by inputing the ssid and password to your WiFi. This is needed for configuration.
+  - You can use Thonny IDE to do this: Open each file from micropython/ -> Save As... -> Raspberry Pi Pico
 
-- ✅ All GND connected together
-- ✅ I²C0 devices (0x20, 0x21) on GP0/GP1
-- ✅ I²C1 devices (0x22, 0x23) on GP14/GP15
-- ✅ LCD on GP10/GP11, address 0x27
-- ✅ No row/column mix-up on keyboard vs lampboard wiring
-- ✅ LED current limiting is handled appropriately for your build
-
-- The replica has a small opening in the back. Use that to connect the machine to a computer.
-- Load all the scripts from the 'python' directory to the root of the MCU file system.
-- Edit the 'wifi_config.py' file by inputing the ssid and password to your WiFi. This is needed for configuration.
-- Once done, the machine will run the program on startup, connect to the WiFi and display an IP address. On that address on port 80 (http), you'll find a configuration interface, which you can use to configure the machine's initial state.
+- Once done, reset the controller and the program will run on startup, connect to the WiFi and display an IP address. Open the machine's address in a web browser (http). There, you'll find a configuration interface with instructions, which you can use to configure the machine's initial state.
