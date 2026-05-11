@@ -159,11 +159,9 @@ Polarity note:
 - ✅ I²C0 devices (0x20, 0x21) on GP0/GP1
 - ✅ I²C1 devices (0x22, 0x23) on GP14/GP15
 - ✅ LCD on GP10/GP11, address 0x27
-- ✅ No address conflicts on any bus
 - ✅ No row/column mix-up on keyboard vs lampboard wiring
 - ✅ LED current limiting is handled appropriately for your build
 
-That’s it — once the wiring matches the tables above, the MicroPython code should be able to scan keys and light the correct lamp positions.
 - The replica has a small opening in the back. Use that to connect the machine to a computer.
 - Load all the scripts from the 'python' directory to the root of the MCU file system.
 - Edit the 'wifi_config.py' file by inputing the ssid and password to your WiFi. This is needed for configuration.
