@@ -13,7 +13,7 @@
 - LCD1602 (HD44780) with I²C backpack (PCF8574)
   - Commonly available LCD displays with these specifications should fit, but just in case, this is the one used during development: <https://dratek.cz/arduino-platforma/1570-iic-i2c-display-lcd-1602-16x2-znaku-lcd-modul-modry.html>
 - Half-sized breadboard, wires
-- Resistors ~200 \(\Omega \) for LEDs (For LED matrix at least 3 resistors)
+- Resistors ~200 Ω for LEDs (For LED matrix at least 3 resistors)
 
 - Put the microcontroller on the breadboard and connect any **GND** and **Vcc** to a bus strip and ground rail of the breadboard, using which you will power the individual subsystems.
 - The 'box' model is the main casing component. Facing the front of the model, put the slotted breadboard to the back-right corner of the model.
